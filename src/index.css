@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'gag';
+    src: url(/src/fonts/Gagkline.otf);
+}
+
+@font-face {
+    font-family: 'fog';
+    src: url(/src/fonts/FoglihtenNo06_076.otf);
+}
+
+
+
+
+* {
+    font-family: 'gag';
+}
+
+.footer {
+background-color: #F0416A;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.who {
+    font-family: 'fog';
+    margin-left: 30px;
+
+}
+
+.brandi {
+    font-family: 'fog';
+    font-size: 26px;
+}
+
+.active {
+    color: #C7F052;
+    border-bottom: 5px dashed #C7F052;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    border: 1px dashed #F0416A;
+    background: #C7F052;
+
+}
+
+img {
+    border-radius: 12px 0px;
+}
+
+.card .card-image img {
+    border-radius: 12px 0px;
+}
+
+.card-title {
+    font-family: 'fog';
+}
+
+.card-content {
+    text-align: start;
+    color: black;
+}
+
+.card-action .btn {
+    width: 100%;
+}
+
+.btn {
+    color: black;
+    background: #F0416A;
+}
+
+.input-field .btn {
+    height: 86%;
+}
+
+.row .col {
+    padding: 0;
+}
+
+.card-image {
+    width: 100%;
+}
+
+iframe {
+    width: 600px;
+    height: 350px;
+}
+
+.loader {
+    width: 40px;
+    aspect-ratio: 1;
+    color: #F0416A;
+    background: repeating-conic-gradient(from -47deg,#0000 0deg, currentColor 1deg 91deg,#0000 94deg 180deg);
+    display: flex;
+    animation: l12-0 2s infinite linear;
+  }
+  .loader::before,
+  .loader::after {
+    content: "";
+    flex: 1;
+      clip-path: polygon(0 0,100% 50%, 0 100%);
+    background: currentColor;
+    animation: l12 0.3s infinite alternate;
+    transform-origin: bottom left;
+  }
+  .loader::after {
+    clip-path: polygon(100% 0,100% 100%,0 50%);
+    transform-origin: top right;
+  }
+  @keyframes l12-0 {
+      0%,49.9% {transform:scaleX( 1)}
+      50%,100% {transform:scaleX(-1)}
+  }
+  @keyframes l12 {
+      0%, 20%  {transform:rotate(0deg)}
+      80%,100% {transform:rotate(-270deg)}
+  }
+
+
+
+.preloader-box {
+    margin-bottom: 40px;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+.btn-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.btn-block .btn {
+    width: 20%;
+}
+
+.arrow-btn {
+    margin-bottom: 20px;
+    border: 1px solid rgba(235, 203, 149, 0.5);
+    background: none;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'fog';
+}
+
+.row {
+    margin-bottom: 0px;
+}
+
+.first-recipe-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.video-YT-block {
+    text-align: center;
+}
+
+.video-YT-block h4 {
+    font-family: 'play';
+}
+
+.h1-contact{
+    color: white;
+}
+
+.YT-frame-video {
+    margin-bottom: 20px;
+}
+
+.Contacts-block{
+    color: white;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contacts-cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inf {
+    margin-left: 50px;
+}
+
+h2{
+    font-family: "fog";
+}
+
+h4{
+    font-family: "fog";
+}
+
+tr {
+    border-bottom: 1px solid rgba(235, 204, 149, 0.3);
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+}
+
+.icon-1 {
+    border-radius: 0px;
+    margin-right: 8px;
+}
+
+.info-block p {
+    margin: 4px;
+}
+
+.contact-image {
+    width: 100%;
+}
+
+.about-block {
+    color: white;
+}
+
+.cooks-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cooks-block img {
+    width: 30%;
+    transition: 0.3s ease-in-out;
+}
+
+.cooks-block img:hover {
+    transform: scale(103%);
+    transition: 0.3s ease-in-out;
+}
+
+.head {
+    background-color: #F0416A;
+}
